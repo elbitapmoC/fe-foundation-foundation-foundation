@@ -27,15 +27,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="main">
-        {/*
-        <PhaseOne
-          title="Do We Have Anything In Common?"
-          description="Checks both arrays, returns true if they have an element has a shared value."/>
-        
-
-        <PhaseTwo /> 
-        */}
+        {/* Button Increment & Decrement */}
+        {/* <PhaseOne />   */}
+        {/* Display as a string the info sent in from API */}
+        {/* <PhaseTwo /> */}
+        {/* Loads in a random user via API */}
         <PhaseThree />
+        {/* Loads in an initial random user, click button to add new users and append to page. */}
+        {/* <PhaseFinal /> */}
       </div>
       <Footer />
     </div>

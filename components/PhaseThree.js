@@ -1,12 +1,26 @@
-import React from "react";
-
+import { useEffect, useState } from "react";
+import Loading from "./Loading";
 const PhaseThree = () => {
-  if (!true) return <div>PhaseThree</div>;
-  return (
-    <>
-      <h1>works</h1>
-    </>
-  );
+  const [data, setData] = useState();
+
+  const getData = async () => {
+    const response = await fetch("https://randomuser.me/api/");
+    const json = await response.json();
+    setData(json);
+  };
+
+  useEffect(() => {
+    getData().catch(console.error("👻 BOO!"));
+  }, []);
+
+  if (!data)
+    return (
+      <>
+        <Loading></Loading>
+      </>
+    );
+
+  return <>{/* {data?.map} */}</>;
 };
 
 export default PhaseThree;

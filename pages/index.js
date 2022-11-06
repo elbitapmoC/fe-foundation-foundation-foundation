@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import PhaseOne from "../components/PhaseOne";
 import PhaseTwo from "../components/PhaseTwo";
 import PhaseThree from "../components/PhaseThree";
+import PhaseFinal from "../components/PhaseFinal";
 
 export default function Home() {
   const [count, setCount] = useState(1);
@@ -32,9 +33,9 @@ export default function Home() {
         {/* Display as a string the info sent in from API */}
         {/* <PhaseTwo /> */}
         {/* Loads in a random user via API */}
-        <PhaseThree />
+        {/* <PhaseThree /> */}
         {/* Loads in an initial random user, click button to add new users and append to page. */}
-        {/* <PhaseFinal /> */}
+        <PhaseFinal />
       </div>
       <Footer />
     </div>
